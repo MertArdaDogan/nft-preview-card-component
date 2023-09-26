@@ -1,0 +1,98 @@
+:root{
+    --soft-blue     :hsl(215, 51%, 70%);
+    --cyan          :hsl(178, 100%, 50%);
+
+    --main          :hsl(217, 54%, 11%);
+    --card          :hsl(216, 50%, 16%);
+    --line          :hsl(215, 32%, 27%);
+    --white         :hsl(0, 0%, 100%);
+
+    --outfit        :'Outfit', sans-serif;
+}
+/* 300 400 600 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--outfit);
+    background-color: var(--main);
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 320px;
+    background-color: var(--card);
+    margin-top: 150px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.card-body{
+    margin-top: 25px;
+    margin-left: 25px;
+    position: relative;
+}
+.card-header{
+    color: var(--white);
+    font-weight: 600;
+}
+.card-header:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.card-text{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+.card-eth{
+    color: var(--cyan);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 25px 25px 0 0;
+}
+.icon{
+    position: relative;
+    top: 3px;
+    padding-right: 5px;
+}
+.card-time{
+    font-size: 15px;
+    color: var(--soft-blue);
+    position: relative;
+    left: 160px;
+    font-weight: 300;
+    bottom: 20px;
+}
+.card-img{
+    width: 91.5%;
+    height: 270px;
+    border-radius: 10px;
+}
+.eth-img{
+    width: 270px;
+    border-radius: 10px;
+}
+.creation-img{
+    width: 30px;
+    border: 1.5px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.card-creation{
+    color: var(--soft-blue);
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.card-creation div{
+   position: relative;
+   bottom: 11px;
+}
+span{
+    color: var(--white);
+    cursor: pointer;
+}
+span:hover{
+    color: var(--cyan);
+}
